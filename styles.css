@@ -1,0 +1,271 @@
+body {
+  text-align: center;
+  background-color: black;
+}
+.container{
+  padding: 10px 10%;
+}
+#header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo{
+  display: inline-block;
+  width: 300px;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; 
+  margin-top: -100px;
+  }
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 10px 20px;
+}
+nav ul li a::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background-color: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+nav ul li a:hover::after{
+  width: 100%;
+}
+nav ul li a{
+  text-decoration: none;
+  color: #ffff;
+  font-size: 20px;
+  position: relative;
+}
+
+h1 {
+  font-size: 5rem;
+  color: white;
+  font-family: "Arvo", cursive;
+  text-shadow: 3px 0 #DA0463;
+
+}
+
+/* ----------------- Hakkımızda ------------------ */
+
+#about {
+  padding: 20px 0; 
+}
+.container-flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.afis {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  
+}
+.left{
+  flex:1;
+  text-align: left;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+}
+.right{
+  flex:2;
+  text-align: left;
+  margin-bottom: 460px;
+}
+.left img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-right: auto;
+  margin-left: 0;
+
+}
+.right h2{
+  color: rgb(176, 149, 149);
+  font-size: 32px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.right p{
+  color: white;
+  font-size: 24px;
+  line-height: 1.5;
+}
+h2 i{
+  color: white;
+}
+
+/* ---------------------Eğitimlerimiz----------------- */
+#educations{
+  padding: 30px 0;
+}
+.educations-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+.educations-list div{
+  background: #262626;
+  padding: 40px;
+  font-weight: 300;
+  border-radius: 10px;
+   transition: background 0.5, transform 05s; 
+   transform: translateY(-10px);
+}
+
+.educations-list div h2{
+  color: white;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.educations-list div a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+  margin-top: 20px;
+  display: inline-block;
+}
+.educations-list div:hover{
+  background: #ffea00;
+}
+p{
+  color: white;
+  font-size: x-large;
+}
+.talimatlar {
+  display: flex;
+  flex-direction: column; /* Maddeleri dikey olarak sıralar */
+  justify-content: center; /* Yatayda ortalar */
+  align-items: center; /* Dikeyde ortalar */
+  color: white;
+}
+.talimatlar li{
+  padding-top: 20px;
+  font-size: 20px;
+}
+.talimatlar li.none{
+  list-style: none;
+}
+
+/* ----------------- BİR ŞEYLER ÇALIN ------------------ */
+.w {
+background-image: url(./images/tom1.png);
+}
+
+.a {
+  background-image: url(./images/tom2.png);
+}
+
+.s {
+  background-image: url(./images/tom3.png);
+}
+
+.d {
+  background-image: url(./images/tom4.png);
+}
+
+.j {
+  background-image: url(./images/kick.png);
+}
+
+.k {
+  background-image: url(./images/crash.png);
+}
+
+.l {
+  background-image: url(./images/snare.png);
+}
+
+.duzen {
+  margin: 10% auto;
+}
+
+.red {
+  color: red;
+}
+
+.davul {
+  outline: none;
+  border: 10px solid white;
+  font-size: 5rem;
+  font-family: 'Arvo', cursive;
+  line-height: 2;
+  font-weight: 900;
+  color: #DA0463;
+  text-shadow: 3px 0 #DBEDF3;
+  border-radius: 15px;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  margin: 10px;
+  background-color: white;
+}
+/* ----------------------İletişim-------------------- */
+footer {
+  background-color:black; 
+  color: white; 
+  padding: 20px;
+}
+footer p {
+  margin: 0; 
+}
+footer ul {
+  list-style-type: none; 
+  padding: 0; 
+   margin: 0; 
+  display: flex; 
+  justify-content: flex-end; 
+}
+footer ul li {
+  margin-left: 20px; 
+}
+footer ul li a {
+  text-decoration: none; 
+  color: white; 
+}
+footer ul li a:hover {
+  color: #ff004f; 
+}
+footer p img{
+    width: 30%;
+    align-self: center; 
+  }
+  @media only screen and (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+  .container-flex {
+      flex-direction: column;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .educations-list {
+      flex-direction: column;
+      align-items: center;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .duzen {
+      flex-direction: column;
+  }
+}
